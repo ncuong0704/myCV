@@ -1,0 +1,43 @@
+:root {
+    --text-color: #333;
+    --white-color: #ffffff;
+    --black-color: #000;
+    --primary-color: #f6412e;
+    --secondary-color: #ff6333;
+    --toggle-color: #ffffff;
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    color: var(--text-color);
+    box-sizing: border-box;
+    line-height: 1.6rem;
+}
+/* js html */
+.htmlJS {
+    --toggle-color: #2a323f;
+    --text-color: #999;
+}
+/* @keyframes */
+
+/* Button */
+.btn_all {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.btn_all:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
