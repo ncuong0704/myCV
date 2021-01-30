@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/Assets/css/base.css">
     <link rel="stylesheet" href="/Assets/css/main.css">
-    <link rel="stylesheet" href="./Assets/css/form.css">
     <link rel="stylesheet" href="/Assets/css/grid_systems.css">
     <link rel="stylesheet" href="/Assets/css/responsive.css">
     <script src="https://kit.fontawesome.com/32dd5303c7.js" crossorigin="anonymous"></script>
@@ -21,13 +20,6 @@
         <div class="loading"></div>
     </div>
     <header>
-        <div class="header_top hide-on-mobile">
-            <i class="far fa-hand-point-right"></i>
-            <h3 class="heading_header_top">
-                WELCOME TO MY WEBSITE
-            </h3>
-            <i class="far fa-hand-point-left"></i>
-        </div>
         <div class="header_bottom_container">
             <div class="grid wide">
                 <div class="header_bottom">
@@ -35,19 +27,19 @@
                         <i class="fas fa-bars"></i>
                         <ul class="list_menu_mobi">
                             <li class="item_menu_mobi">
-                                <a class="link_item_menu_mobi link_item_mobi_1 item_selector" href="#block1">Home</a>
+                                <a class="link_item_menu_mobi link_item_mobi_1 item_selector" href="#">Home</a>
                             </li>
                             <li class="item_menu_mobi">
-                                <a class="link_item_menu_mobi link_item_mobi_2" href="#block2">About</a>
+                                <a class="link_item_menu_mobi link_item_mobi_2" href="#space2">About</a>
                             </li>
                             <li class="item_menu_mobi">
-                                <a class="link_item_menu_mobi link_item_mobi_3" href="#block3">Skills</a>
+                                <a class="link_item_menu_mobi link_item_mobi_3" href="#space3">Skills</a>
                             </li>
                             <li class="item_menu_mobi">
-                                <a class="link_item_menu_mobi link_item_mobi_4" href="#block4">Project</a>
+                                <a class="link_item_menu_mobi link_item_mobi_4" href="#space4">Projects</a>
                             </li>
                             <li class="item_menu_mobi">
-                                <a class="link_item_menu_mobi link_item_mobi_5" href="#block5">Contact Me</a>
+                                <a class="link_item_menu_mobi link_item_mobi_5" href="#space5">Contact me</a>
                             </li>
                         </ul>
 
@@ -58,19 +50,19 @@
                         </div>
                         <ul class="list_menu hide-on-mobile-tablet">
                             <li class="item_menu">
-                                <a class="link_item_menu link_item1 item_selector" href="#block1">Home</a>
+                                <a class="link_item_menu link_item1 item_selector" href="#">Home</a>
                             </li>
                             <li class="item_menu">
-                                <a class="link_item_menu link_item2" href="#block2">About</a>
+                                <a class="link_item_menu link_item2" href="#space2">About</a>
                             </li>
                             <li class="item_menu">
-                                <a class="link_item_menu link_item3" href="#block3">Skills</a>
+                                <a class="link_item_menu link_item3" href="#space3">Skills</a>
                             </li>
                             <li class="item_menu">
-                                <a class="link_item_menu link_item4" href="#block4">Project</a>
+                                <a class="link_item_menu link_item4" href="#space4">Projects</a>
                             </li>
                             <li class="item_menu">
-                                <a class="link_item_menu link_item5" href="#block5">Contact Me</a>
+                                <a class="link_item_menu link_item5" href="#space5">Contact me</a>
                             </li>
                         </ul>
                     </div>
@@ -87,110 +79,307 @@
                                 <i class="fas fa-envelope-square"></i>
                             </a>
                         </div>
-                        <div class="setting hide-on-mobile-tablet">
-                            <div title="Setting" class="icon_setting">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="display_setting">
-                                <div class="display_time">
-                                    <p class="time"></p>
-                                </div>
-                                <div class="setting_light_dark">
-                                    <div class="icon_light_dark">
-                                        <i class="fas fa-sun icon_sun"></i>
-                                        <i class="fas fa-moon icon_moon"></i>
-                                    </div>
-                                    <p class="text_light_dark">Light On</p>
-                                </div>
-                            </div>
+                        <div title="Theme" class="icon_light_dark">
+                            <i class="fas fa-sun icon_sun"></i>
+                            <i class="fas fa-moon icon_moon"></i>
                         </div>
-                    </div>
-                    <div class="icon_light_dark_mobi">
-                        <i class="fas fa-sun icon_sun_mobi"></i>
-                        <i class="fas fa-moon icon_moon_mobi"></i>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="content_container">
-        <div class="grid wide">
-            <div id="block1">
-                <div class="section_home_left">
-                    <div class="block_home_left">
-                        <h1 class="heading_home">
-                            Hello, my name is <br><span class="color_my_name">Nguyen Van Cuong</span> <br>And
-                            I'm a
-                            <span class="color_heading_home"></span>
-                        </h1>
-                        <a class="btn_contact" href="#block5">
-                            <button class="btn_all">
-                                Contact me
-                            </button>
-                        </a>
+    <div class="app">
+        <div class="content_container">
+            <div class="container_block1">
+                <div class="grid wide">
+                    <div id="block1">
+                        <div class="section_home_left">
+                            <div class="block_home_left">
+                                <h1 class="heading_home">
+                                    Hello, my name is <br><span class="color_my_name">Nguyen Van Cuong</span> <br>And
+                                    I'm a
+                                    <span class="color_heading_home"></span>
+                                </h1>
+                                <a class="btn_contact" href="#block5">
+                                    <button class="btn_all">
+                                        Contact me
+                                    </button>
+                                </a>
 
+                            </div>
+                        </div>
+                        <div class="block_image_me">
+                            <div class="border_image_me">
+                                <img src="https://i.pinimg.com/236x/98/5e/e7/985ee75d9fb4c177dafc04688741d67b.jpg"
+                                    alt="image me" class="image_me">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="block_image_me">
-                    <div class="border_image_me">
-                        <img src="https://i.pinimg.com/236x/98/5e/e7/985ee75d9fb4c177dafc04688741d67b.jpg"
-                            alt="image me" class="image_me">
+            </div>
+            <div id="space2" class="space"></div>
+            <div id="block2">
+                <div class="block_heading_section">
+                    <h1 class="heading_section">About me</h1>
+                </div>
+                <div class="container_block">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-4 l-o-0 c-8 c-o-2">
+                                <div class="block_slide_image">
+                                    <img src="https://hinhnendephd.com/wp-content/uploads/2019/10/anh-avatar-dep.jpg"
+                                        class="image_slide" alt="image slide">
+                                </div>
+                            </div>
+                            <div class="col l-8 c-12">
+                                <div class="block_text_about">
+                                    <p class="text_about">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate nulla
+                                        saepe
+                                        voluptatem animi laudantium explicabo, maiores, facere fugiat, aspernatur
+                                        obcaecati.
+                                        Voluptates accusantium quam quibusdam saepe officia perspiciatis rem illum?
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iusto sapiente
+                                        iure
+                                        sit
+                                        eligendi odit, velit delectus culpa quibusdam, officia quod iste numquam nulla,
+                                        odio
+                                        vel
+                                        voluptates est enim porro.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam totam
+                                        perspiciatis? Amet assumenda ipsa adipisci sunt? Maiores, voluptatem culpa
+                                        quibusdam
+                                        voluptas, eligendi saepe commodi doloremque ducimus neque, nulla dignissimos!
+                                    </p>
+                                    <div class="block_btn_download">
+                                        <a href="./Assets/download/IMG_0073.JPG" download="my CV" class="link_download">
+                                            <div class="btn_all btn_download">Download my CV</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
+            <div id="space3" class="space"></div>
 
+            <div id="block3">
+                <div class="block_heading_section">
+                    <h1 class="heading_section">My Skills</h1>
+                </div>
+                <div class="container_block">
+                    <div class="container_logo_skills grid wide">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="container_logo">
+                                    <div class="block_logo">
+                                        <h2 class="title_logo">
+                                            HTML
+                                        </h2>
+                                    </div>
+                                    <div class="modal_logo">
+                                        <h2 class="heading_modal_logo">
+                                            8/10
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="container_logo">
+                                    <div class="block_logo">
+                                        <h2 class="title_logo">
+                                            CSS
+                                        </h2>
+                                    </div>
+                                    <div class="modal_logo">
+                                        <h2 class="heading_modal_logo">
+                                            8/10
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="container_logo">
+                                    <div class="block_logo">
+                                        <h2 class="title_logo">
+                                            JS
+                                        </h2>
+                                    </div>
+                                    <div class="modal_logo">
+                                        <h2 class="heading_modal_logo">
+                                            7/10
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="container_logo">
+                                    <div class="block_logo">
+                                        <h2 class="title_logo">
+                                            React
+                                        </h2>
+                                    </div>
+                                    <div class="modal_logo">
+                                        <h2 class="heading_modal_logo">
+                                            5/10
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note_section_skills">
+                        <h3 class="text_note_section_skills">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, nobis! Aliquid totam fugit
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+            <div id="space4" class="space"></div>
+            <div id="block4">
+                <div class="block_heading_section">
+                    <h1 class="heading_section">My Projects</h1>
+                </div>
+                <div class="container_block">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12">
+                                <a target="_blanc" href="./shopee.html" class="link_project">
+                                    <div class="container_project">
+                                        <div class="image_project"
+                                            style="background-image: url(https://nordiccoder.com/app/uploads/2019/07/5-ly-do-ban-nen-hoc-html-css.jpg);">
+                                        </div>
+                                        <h3 class="title_project">
+                                            Shopee Website
+                                        </h3>
+                                        <p class="note_project">
+                                            HTML, CSS
+                                        </p>
+                                        <div class="branch_project">
+                                            <p class="text_branch_project">
+                                                Basic
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-12 c-12">
+                                <a target="_blanc" href="./valitate.html" class="link_project">
+                                    <div class="container_project">
+                                        <div class="image_project"
+                                            style="background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--_pyWGSyD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/w9u60357jk4ozdho7urq.jpg);">
+                                        </div>
+                                        <h3 class="title_project">
+                                            Javascript Form Validaton
+                                        </h3>
+                                        <p class="note_project">
+                                            HTML, CSS & JS
+                                        </p>
+                                        <div class="branch_project">
+                                            <p class="text_branch_project">
+                                                JS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-12 c-12">
+                                <a target="_blanc" href="http://192.168.1.56:3000" class="link_project">
+                                    <div class="container_project">
+                                        <div class="image_project"
+                                            style="background-image: url(https://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg);">
+                                        </div>
+                                        <h3 class="title_project">
+                                            TodoList
+                                        </h3>
+                                        <p class="note_project">
+                                            React Hooks
+                                        </p>
+                                        <div class="branch_project">
+                                            <p class="text_branch_project">
+                                                React
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-12 c-12">
+                                <a target="_blanc" href="http://192.168.1.56:3001" class="link_project">
+                                    <div class="container_project">
+                                        <div class="image_project"
+                                            style="background-image: url(https://res.cloudinary.com/duqeezi8j/image/upload/v1517427149/REACTjs-cover_xd5qrm.jpg);">
+                                        </div>
+                                        <h3 class="title_project">
+                                            Call API and Search
+                                        </h3>
+                                        <p class="note_project">
+                                            React Hooks
+                                        </p>
+                                        <div class="branch_project">
+                                            <p class="text_branch_project">
+                                                React
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="space5" class="space"></div>
+
+            <div id="block5">
+                <div class="block_heading_section">
+                    <h1 class="heading_section">Contact me</h1>
+                </div>
+                <div class="container_block">
+                    <div class="block_infomation_contact">
+                        <div class="block_contact block_image_contact">
+                            <img class="image_contact"
+                                src="https://www.theportugalnews.com/uploads/news/Cristiano_Ronaldo_2018__cropped_.jpg"
+                                alt="">
+                        </div>
+                        <div class="block_contact">
+                            <i class="fab fa-facebook-square"></i>
+                            <a target="_blanc" href="https://www.facebook.com/nguyen.cuong.5059" class="text_contact">
+                                www.facebook.com/nguyen.cuong.5059
+                            </a>
+                        </div>
+                        <div class="block_contact">
+                            <i class="fas fa-envelope-square"></i>
+                            <a href="mailto:ncuong0704@gmail.com" class="text_contact">
+                                ncuong0704@gmail.com
+                            </a>
+                        </div>
+                        <div class="block_contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:0901800274" class="text_contact">
+                                090 1800 274
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div id="block2"></div>
-        <div id="block3"></div>
-        <div id="block4"></div>
-        <div id="block5"></div>
-    </div>
-    <footer>
-        <h2 class="heading_footer">
-            Created By Nguyen Cuong | &copy; 2021 ALl rights reserved.
-        </h2>
-    </footer>
-    <div class="icon_scroll_top_block">
+        <footer>
+            <h2 class="heading_footer">
+                Created By Nguyen Cuong | &copy; 2021 ALl rights reserved.
+            </h2>
+        </footer>
         <a href="#">
-            <i class="fas fa-chevron-up icon_scroll_top"></i>
+            <div class="icon_scroll_top_block">
+                <i class="fas fa-chevron-up icon_scroll_top"></i>
+            </div>
         </a>
     </div>
     <script src="./Assets/javascript/typed.js"></script>
     <script src="./Assets/javascript/main.js"></script>
-    <script src="./Assets/javascript/validator.js"></script>
-    <script>
-        // Mong muốn của chúng ta
-        // Lưu ý kiểm tra xem id truyền vào Validator
-        Validator({
-            form: '#form-1',
-            formGroupSelector: '.form_group',
-            errorSelector: '.form_message',
-            rules: [
-                // Họ Tên
-                Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
-                // Email
-                Validator.isRequired('#email'),
-                Validator.isEmail('#email', 'Vui lòng nhập đúng Email'),
-                // Radio và Checkbox
-                Validator.isRequired('input[name="gender"]', 'Vui lòng chọn giới tính'),
-                // Tỉnh/Thành phố
-                Validator.isRequired('#province'),
-                // Mật khẩu
-                Validator.isRequired('#password'),
-                Validator.minLength('#password', 6, 'Vui lòng nhập trên 6 kí tự'),
-                Validator.isRequired('#password_confirmation'),
-                Validator.isConfirmed('#password_confirmation', function () {
-                    return document.querySelector('#form-1 #password').value;
-                }, 'Vui lòng nhập lại đúng mật khẩu'),
-            ],
-            onSubmit: function (data) {
-                // Call API
-                console.log(data);
-            }
-        });
-    </script>
 </body>
 
 </html>

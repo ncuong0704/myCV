@@ -1,0 +1,53 @@
+:root{
+    --text-color: #333;
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #f6412e;
+    --secondary-color: #ff6333;
+    --height-Block_Navbar_Container: 118px;
+    --height-Top_Navbar: 35px;
+    --height-Bottom_Navbar: calc(var(--height-Block_Navbar_Container) - var(--height-Top_Navbar));
+    --width-Icon_Box_Search: 60px;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    color: var(--text-color);
+    box-sizing: border-box;
+    line-height: 1.6rem;
+}
+/* button */
+.All_btn{
+    padding: 8px 15px;
+    color: var(--black-color);
+    font-size: 1.5rem;
+    height: 32px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: var(--white-color);
+}
+/* Hiệu ứng */
+@keyframes Growth{
+    from{
+        opacity: 0;
+        transform: scale(var(--scale-from));
+    }
+    to{
+        opacity: 1;
+        transform: scale(var(--scale-to));
+    }
+}
+@keyframes FadeIn{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}

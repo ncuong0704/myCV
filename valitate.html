@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate</title>
+    <link rel="stylesheet" href="./Assets/css/validate.css">
+</head>
+
+<body>
+    <div class="Container_form">
+        <form id="form_1" class="form_1" method="post">
+            <h1 class="heading_form_1">Đăng ký</h1>
+            <p class="P_form_1">Vui lòng điền đầy đủ thông tin</p>
+            <div class="space"></div>
+            <div class="form_group">
+                <label class="label_form_group" for="full_name">Tên đầy đủ</label>
+                <input placeholder="VD: Nguyễn Văn Cường" class="input_form_group" type="text" name="full_name"
+                    id="full_name">
+                <div class="Error_message"></div>
+            </div>
+            <div class="form_group">
+                <label class="label_form_group" for="email">Email</label>
+                <input placeholder="VD: ncuong0704@gmail.com" class="input_form_group" type="text" name="email"
+                    id="email">
+                <div class="Error_message"></div>
+            </div>
+
+            <div class="form_group">
+                <label class="label_form_group" for="password">Mật khẩu</label>
+                <input class="input_form_group" type="password" name="password" id="password">
+                <div class="Error_message"></div>
+            </div>
+            <div class="form_group">
+                <label class="label_form_group" for="confirm_password">Nhập lại mật khẩu</label>
+                <input class="input_form_group" type="password" name="confirm_password" id="confirm_password">
+                <div class="Error_message"></div>
+            </div>
+            <div class="form_group">
+                <label class="label_form_group">Giới tính</label>
+                <select name="gender" id="gender">
+                    <option value="undefined">--Nam/Nữ--</option>
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                </select>
+                <div class="Error_message"></div>
+            </div>
+            <div class="form_group">
+                <label class="label_form_group">Chọn khoá học</label>
+                <div class="container_btn_select">
+                    <div class="block_btn_select">
+                        <input class="input_form_group" value="FE" type="checkbox" name="choose">
+                        <div class="text_btn_select">Front-End</div>
+                    </div>
+                    <div class="block_btn_select">
+                        <input class="input_form_group" value="BE" type="checkbox" name="choose">
+                        <div class="text_btn_select">Back-End</div>
+                    </div>
+                    <div class="block_btn_select">
+                        <input class="input_form_group" value="FULL" type="checkbox" name="choose">
+                        <div class="text_btn_select">Full-Stack</div>
+                    </div>
+                </div>
+                <div class="Error_message"></div>
+            </div>
+
+            <button id="submit_btn">Đăng ký</button>
+        </form>
+    </div>
+
+    <script src="./Assets/javascript/validate.js"></script>
+    <script>
+        Validator({
+            form: '#form_1',
+            ErrorMessage: '.Error_message',
+            formGroup: '.form_group',
+            rules: [
+                Validator.isRequest('#full_name', 'Vui lòng nhập thông tin'),
+                Validator.isEmail('#email', 'Vui lòng nhập đúng email'),
+                Validator.confirmPassword('#confirm_password', function () {
+                    return document.querySelector('#password').value;
+                }, 'Vui lòng nhập lại đúng mật khẩu'),
+                Validator.isPassword('#password', 6, 'Vui lòng nhập trên 6 ký tự'),
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
+        })
+    </script>
+</body>
+
+</html>

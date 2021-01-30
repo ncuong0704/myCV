@@ -4,7 +4,9 @@
     --black-color: #000;
     --primary-color: #f6412e;
     --secondary-color: #ff6333;
-    --toggle-color: #ffffff;
+    --toggle-color: #e5e5e5;
+    --toggle-br-right-bottom: #ff6333;
+    --toggle-text-contact: white;
 }
 * {
     box-sizing: inherit;
@@ -21,9 +23,82 @@ html {
 .htmlJS {
     --toggle-color: #2a323f;
     --text-color: #999;
+    --toggle-br-right-bottom: #2b1a1c;
+    --toggle-text-contact: #f6412e;
 }
 /* @keyframes */
-
+@keyframes lightColor {
+    from {
+        filter: brightness(100%);
+    }
+    to {
+        filter: brightness(90%);
+    }
+}
+@keyframes moveUp {
+    from {
+        margin-top: 50px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+@keyframes moveDown {
+    from {
+        margin-top: -100px;
+        opacity: 0.5;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+@keyframes moveLeft {
+    from {
+        margin-left: -50px;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+@keyframes moveRight {
+    from {
+        margin-left: 100px;
+        opacity: 0.5;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+@keyframes upDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
 /* Button */
 .btn_all {
     padding: 10px 20px;

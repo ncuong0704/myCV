@@ -3,6 +3,7 @@
     .hide-on-mobile-tablet {
         display: none;
     }
+
     .icon_bar {
         display: block;
     }
@@ -23,6 +24,9 @@
     }
     .toggle_list_menu_mobi {
         display: flex;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
     }
     .item_menu_mobi {
         width: 100%;
@@ -33,34 +37,33 @@
         justify-content: center;
         padding: 30px;
     }
-    .sticky_header_bottom_container {
-        padding: 20px;
-    }
-    .icon_light_dark_mobi {
-        display: block;
-    }
-    .icon_sun_mobi {
-        display: block !important;
-    }
-    .icon_moon_mobi {
-        display: none !important;
-    }
-    .toggle_hidden_icon_sun_mobi {
-        display: none !important;
-    }
-    .toggle_hidden_icon_moon_mobi {
-        display: block !important;
-    }
-    .header_bottom_right {
-        display: none;
-    }
+
     /* home */
+    #block1 {
+        flex-wrap: wrap;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
     .block_image_me {
         margin-left: 50%;
         transform: translateX(-50%);
     }
     .block_home_left {
         margin: 0;
+    }
+    .load_block_image_me {
+        margin-left: 50% !important;
+    }
+    /* about */
+    .block_btn_download {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    /* contact */
+    .block_infomation_contact {
+        margin-top: 20px;
     }
 }
 /* Tablet */
@@ -80,6 +83,10 @@
     .icon_bar {
         font-size: 30px;
     }
+    /* icon theme */
+    .icon_light_dark {
+        font-size: 25px;
+    }
     /* home */
     #block1 {
         height: 1000px;
@@ -94,20 +101,24 @@
     .image_me {
         --image-size: 360px;
     }
+    /* about */
+    .block_slide_image {
+        height: 400px;
+    }
 }
 /* Mobile */
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
     }
-    .header_bottom_container {
-        padding: 20px;
-    }
     .header_bottom a {
         color: var(--white-color);
         font-size: 20px;
         text-decoration: none;
         transition: all linear 0.3s;
+    }
+    .header_bottom_container {
+        padding: 10px 20px;
     }
     .icon_light_dark_mobi {
         font-size: 20px;
@@ -133,5 +144,31 @@
     }
     .heading_home {
         margin-top: 20px;
+    }
+    /* about */
+    .text_about {
+        padding: 0 20px;
+    }
+    /* skills */
+    .text_note_section_skills {
+        padding: 0 10px;
+    }
+    .container_project {
+        margin: 20px;
+    }
+    /* contact */
+
+    /* slide image contact */
+    .Container {
+        height: 200px;
+    }
+    .slides {
+        height: 200px;
+    }
+    .Image {
+        height: 200px;
+    }
+    .block_slide_image {
+        height: 280px;
     }
 }
