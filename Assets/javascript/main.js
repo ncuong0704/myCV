@@ -30,10 +30,10 @@ const block4 = document.querySelector('#block4');
 
 console.log(screen.height)
 
-const localtion_block1 = block1.offsetTop + block1.clientHeight - screen.height + 190;
-const localtion_block2 = block2.offsetTop + block2.clientHeight - screen.height + 190;
-const localtion_block3 = block3.offsetTop + block3.clientHeight - screen.height + 190;
-const localtion_block4 = block4.offsetTop + block4.clientHeight - screen.height + 190;
+const localtion_block1 = block1.offsetTop + block1.clientHeight - screen.height + 250;
+const localtion_block2 = block2.offsetTop + block2.clientHeight - screen.height + 250;
+const localtion_block3 = block3.offsetTop + block3.clientHeight - screen.height + 250;
+const localtion_block4 = block4.offsetTop + block4.clientHeight - screen.height + 250;
 
 
 const headerBottomContainer = document.querySelector('.header_bottom_container');
@@ -189,3 +189,16 @@ setInterval(() => {
     }
     count++;
 }, 2000)
+
+
+const container_logo = document.querySelectorAll('.container_logo');
+container_logo.forEach(function(test){
+    test.addEventListener('click',()=>{
+        const modal_logo = test.querySelector('.modal_logo');
+        console.log(modal_logo)
+        modal_logo.classList.add('add_attr_modal_logo');
+        setTimeout(()=>{
+        modal_logo.classList.remove('add_attr_modal_logo');
+        }, 2000)
+    })
+})

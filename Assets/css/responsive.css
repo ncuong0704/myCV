@@ -28,6 +28,9 @@
         padding-left: 0;
         margin: 0;
     }
+    .icon_light_dark:hover {
+        box-shadow: none;
+    }
     .item_menu_mobi {
         width: 100%;
     }
